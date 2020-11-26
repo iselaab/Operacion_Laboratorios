@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LaboratoriosFisicaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Docentes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="laboratorio" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="contraseña" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cartaDescriptiva" Type="varbinary(max)" />
+    <Property Name="presentacion" Type="varbinary(max)" />
+    <Property Name="demoEquipo" Type="varbinary(max)" />
+    <Property Name="evaluaciones" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="LaboratoriosFisicaModelStoreContainer">
+    <EntitySet Name="Docentes" EntityType="Self.Docentes" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

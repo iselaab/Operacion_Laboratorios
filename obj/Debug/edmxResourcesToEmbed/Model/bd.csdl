@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LaboratoriosFisicaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Docentes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="laboratorio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="contraseña" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cartaDescriptiva" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="presentacion" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="demoEquipo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="evaluaciones" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="LaboratoriosFisicaEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Docentes" EntityType="Self.Docentes" />
+  </EntityContainer>
+</Schema>

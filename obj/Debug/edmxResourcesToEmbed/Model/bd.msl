@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LaboratoriosFisicaModelStoreContainer" CdmEntityContainer="LaboratoriosFisicaEntities1">
+    <EntitySetMapping Name="Docentes">
+      <EntityTypeMapping TypeName="LaboratoriosFisicaModel.Docentes">
+        <MappingFragment StoreEntitySet="Docentes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="laboratorio" ColumnName="laboratorio" />
+          <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+          <ScalarProperty Name="cartaDescriptiva" ColumnName="cartaDescriptiva" />
+          <ScalarProperty Name="presentacion" ColumnName="presentacion" />
+          <ScalarProperty Name="demoEquipo" ColumnName="demoEquipo" />
+          <ScalarProperty Name="evaluaciones" ColumnName="evaluaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

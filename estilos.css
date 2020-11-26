@@ -1,0 +1,57 @@
+﻿body {
+    background-image: url("fimexfuera2.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+ 
+}
+.container{
+    margin-top:25px;
+}
+
+.textito{
+    font-size: 20px;
+    font-style:italic;
+}
+.textito2 {
+    font-size: 20px;
+
+}
+.otrot {
+    font-size: 1.5em;
+}
+.jstyle {
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+.bottt{
+    margin-top:20px;
+}
+.lbl {
+    font-size: 2em;
+    padding-top: 30px;
+    font-style: italic;
+}
+
+p{
+    font-size: 2em;
+    font-style:italic;
+}
+.botonsitos{
+    margin-bottom:10px;
+    
+}
+
+
+.jumbostyle{
+    padding: 1rem 0;
+}
+
+.btnn{
+    border:solid 1px #e9ecef !important;
+}
